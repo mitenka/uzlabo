@@ -3,7 +3,22 @@
 {% block content %}
 <div class="container-fluid">
 
-    Details
+    {{ idea.category.name }} > {{ idea.subcategory.name }}
+
+    <h1>{{ idea.title }}</h1>
+    {{ idea.description }}
+
+    <hr />
+    Address: {{ idea.address }}
+
+    <hr />
+    Upvotes: {{ idea.upvotes }}
+
+    <hr />
+    Author: {{ idea.author }}
+
+    <hr />
+    Created at: {{ idea.created_at }}
 
 </div>
 {% endblock %}
