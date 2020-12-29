@@ -21,7 +21,7 @@
     Created at: {{ idea.created_at }}
 
     {% for image in idea.images.all %}
-        <img src="{{ image.file.url }}" />
+        <img src="{{ image.thumbnail.url }}" />
     {% endfor %}
 
 </div>

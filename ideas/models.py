@@ -21,11 +21,11 @@ class Category(models.Model):
 
 
 class Image(models.Model):
-    file = models.ImageField(upload_to='ideas/%Y/%m/%d/')
+    file = models.ImageField(upload_to='ideas/%Y/%m/')
     idea = models.ForeignKey('Idea', on_delete=models.CASCADE,
                              related_name='images', null=True, blank=True)
     thumbnail = ImageSpecField(source='file',
-                               processors=[Transpose(), ResizeToFill(1024, 768)],
+                               processors=[Transpose(), ResizeToFill(320, 240)],
                                format='JPEG',
                                options={'quality': 90})
 
