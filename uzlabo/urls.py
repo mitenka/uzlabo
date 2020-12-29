@@ -9,6 +9,7 @@ urlpatterns = [
     path('ideas/<int:pk>', ideas_views.details, name='ideas-details'),
     path('ideas/new/', ideas_views.new, name='ideas-new'),
 
+    path('pages/', include('django.contrib.flatpages.urls')),
     path('accounts/', include('allauth.urls')),
     path('admin/', admin.site.urls),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
