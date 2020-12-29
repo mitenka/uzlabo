@@ -1,6 +1,6 @@
 from django.shortcuts import render, redirect, get_object_or_404
 
-from ideas.models import Idea
+from ideas.models import Idea, Image
 from ideas.forms import IdeaForm
 
 
@@ -17,8 +17,12 @@ def details(request, pk):
 def new(request):
     if request.method == 'POST':
         form = IdeaForm(request.POST)
+        images = request.FILES.getlist('images')
         if form.is_valid():
             instance = form.save()
+            for image in images:
+                file_instance = Image(file=image, idea=instance)
+                file_instance.save()
             return redirect('ideas-details', pk=instance.pk)
     else:
         form = IdeaForm()

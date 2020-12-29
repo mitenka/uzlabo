@@ -95,6 +95,12 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
+MEDIA_ROOT = BASE_DIR / '..' / 'media/uzlabo'
+
+MEDIA_URL = '/media/'
+
+FILE_UPLOAD_PERMISSIONS = 0o644
+
 
 try:
     from .local_settings import *
