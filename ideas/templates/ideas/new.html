@@ -5,7 +5,12 @@
 
   <form action="." method="post" enctype="multipart/form-data">
     {% csrf_token %}
-    {{ form.as_p }}
+    {{ form.category.label }} {{ form.category }}<br />
+    {{ form.subcategory.label }} {{ form.subcategory }}<br />
+    {{ form.title.label }} {{ form.title }}<br />
+    {{ form.description.label }} {{ form.description }}<br />
+    {{ form.address.label }} {{ form.address }}<br />
+    {{ form.images.label }} {{ form.images }}<br />
     <input type="submit" value="Submit">
   </form>
 
