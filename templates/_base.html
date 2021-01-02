@@ -21,7 +21,7 @@
           <a class="nav-link {% if request.resolver_match.url_name == 'ideas-new' %}active{% endif %}" href="{% url 'ideas-new' %}">New</a>
 
           {% if user.is_authenticated %}
-          <span>Hello, {{ request.user }}</span>
+          <span>Hello, {{ request.user.first_name }}</span>
 
           <form method="post" action="{% url 'account_logout' %}">
             {% csrf_token %}

@@ -19,7 +19,9 @@ def new(request):
         form = IdeaForm(request.POST)
         images = request.FILES.getlist('images')
         if form.is_valid():
-            instance = form.save()
+            instance = form.save(commit=False)
+            instance.user = request.user
+            instance.save()
             for image in images:
                 file_instance = Image(file=image, idea=instance)
                 file_instance.save()

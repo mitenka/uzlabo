@@ -1,4 +1,5 @@
 from django.db import models
+from django.conf import settings
 
 from imagekit.models import ImageSpecField
 from imagekit.processors import (
@@ -44,6 +45,8 @@ class Idea(models.Model):
 
     category = models.ForeignKey(Category, on_delete=models.CASCADE, related_name='+')
     subcategory = models.ForeignKey(Category, on_delete=models.CASCADE, related_name='+')
+    user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE, related_name='ideas',
+        blank=True, null=True)
     status = models.CharField(max_length=50, choices=STATUS_CHOICES, default=STATUS_CHOICES[0][0])
     title = models.CharField(max_length=255)
     description = models.TextField()

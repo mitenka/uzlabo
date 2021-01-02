@@ -18,6 +18,9 @@
     Author: {{ idea.author }}
 
     <hr />
+    User: {{ idea.user.first_name }} {{ idea.user.last_name }}
+
+    <hr />
     Created at: {{ idea.created_at }}
 
     {% for image in idea.images.all %}
