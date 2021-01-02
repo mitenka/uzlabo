@@ -28,7 +28,7 @@
     {% endfor %}
 
     <hr /><hr />
-    <h2>Comments</h2>
+    <h2>Comments ({{ idea.comments.count }})</h2>
     {% for comment in idea.comments.all %}
         <div>{{ comment.user.first_name }} {{ comment.user.last_name }} ({{ comment.created_at }}): {{ comment.body }}</div>
     {% endfor %}
