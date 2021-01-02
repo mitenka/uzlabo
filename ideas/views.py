@@ -1,7 +1,7 @@
 from django.shortcuts import render, redirect, get_object_or_404
 
 from ideas.models import Idea, Image
-from ideas.forms import IdeaForm
+from ideas.forms import IdeaForm, CommentForm
 
 
 def index(request):
@@ -11,7 +11,20 @@ def index(request):
 
 def details(request, pk):
     idea = get_object_or_404(Idea, pk=pk)
-    return render(request, 'ideas/details.html', {'idea': idea})
+
+    if request.method == 'POST':
+        form = CommentForm(request.POST)
+        if form.is_valid():
+            instance = form.save(commit=False)
+            instance.user = request.user
+            instance.idea = idea
+            instance.save()
+            return redirect('ideas-details', pk=idea.pk)
+    else:
+        form = CommentForm()
+
+    return render(request, 'ideas/details.html',
+        {'idea': idea, 'form': form})
 
 
 def new(request):

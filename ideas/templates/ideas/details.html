@@ -27,5 +27,16 @@
         <img src="{{ image.thumbnail.url }}" />
     {% endfor %}
 
+    <hr /><hr />
+    <h2>Comments</h2>
+    {% for comment in idea.comments.all %}
+        <div>{{ comment.user.first_name }} {{ comment.user.last_name }} ({{ comment.created_at }}): {{ comment.body }}</div>
+    {% endfor %}
+    <form action="." method="post">
+        {% csrf_token %}
+        {{ form.body }}
+        <input type="submit" value="Submit">
+    </form>
+
 </div>
 {% endblock %}

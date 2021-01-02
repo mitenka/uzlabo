@@ -1,7 +1,7 @@
 from django import forms
 from django.forms import ModelForm
 
-from ideas.models import Idea
+from ideas.models import Idea, Comment
 
 
 class IdeaForm(ModelForm):
@@ -17,4 +17,12 @@ class IdeaForm(ModelForm):
             'description',
             'address',
             'images'
+        ]
+
+
+class CommentForm(ModelForm):
+    class Meta(object):
+        model = Comment
+        fields = [
+            'body'
         ]

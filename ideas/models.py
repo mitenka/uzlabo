@@ -63,3 +63,20 @@ class Idea(models.Model):
 
     def __str__(self):
         return str(self.title)
+
+
+class Comment(models.Model):
+    STATUS_CHOICES = (
+        ('shown', 'Shown'),
+        ('featured', 'Featured'),
+        ('banned', 'Banned'),
+    )
+
+    user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE, related_name='comments')
+    idea = models.ForeignKey(Idea, on_delete=models.CASCADE, related_name='comments')
+    status = models.CharField(max_length=50, choices=STATUS_CHOICES, default=STATUS_CHOICES[0][0])
+    body = models.TextField()
+    upvotes = models.PositiveIntegerField(default=0)
+    downvotes = models.PositiveIntegerField(default=0)
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)

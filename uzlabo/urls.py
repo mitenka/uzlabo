@@ -6,7 +6,7 @@ from ideas import views as ideas_views
 
 urlpatterns = [
     path('ideas/', ideas_views.index, name='ideas-index'),
-    path('ideas/<int:pk>', ideas_views.details, name='ideas-details'),
+    path('ideas/<int:pk>/', ideas_views.details, name='ideas-details'),
     path('ideas/new/', ideas_views.new, name='ideas-new'),
 
     path('pages/', include('django.contrib.flatpages.urls')),
