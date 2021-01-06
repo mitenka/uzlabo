@@ -33,9 +33,9 @@
           <a class="nav-link" href="{% provider_login_url 'facebook' method='oauth2' %}">Facebook</a>
           {% endif %}
 
-          <a class="nav-link" href="/lv/">LV</a>
-          <a class="nav-link" href="/ru/">RU</a>
-          <a class="nav-link" href="/en/">EN</a>
+          <a class="nav-link" href="/lv/{{ request.get_full_path|slice:'4:' }}">LV</a>
+          <a class="nav-link" href="/ru/{{ request.get_full_path|slice:'4:' }}">RU</a>
+          <a class="nav-link" href="/en/{{ request.get_full_path|slice:'4:' }}">EN</a>
 
         </div>
       </div>
