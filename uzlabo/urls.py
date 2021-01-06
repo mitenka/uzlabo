@@ -4,8 +4,11 @@ from django.conf import settings
 from django.conf.urls.static import static
 from django.conf.urls.i18n import i18n_patterns
 from ideas import views as ideas_views
+from pages import views as pages_views
 
 urlpatterns = i18n_patterns(
+    path('', pages_views.home, name='pages-home'),
+
     path('ideas/', ideas_views.index, name='ideas-index'),
     path('ideas/<int:pk>/', ideas_views.details, name='ideas-details'),
     path('ideas/new/', ideas_views.new, name='ideas-new'),
