@@ -1,11 +1,23 @@
 from django.shortcuts import render, redirect, get_object_or_404
+from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 
 from ideas.models import Idea, Image
 from ideas.forms import IdeaForm, CommentForm
 
 
 def index(request):
-    ideas = Idea.objects.all()
+    PER_PAGE = 10
+
+    page = request.GET.get('page', 1)
+    paginator = Paginator(Idea.objects.all(), PER_PAGE)
+
+    try:
+        ideas = paginator.page(page)
+    except PageNotAnInteger:
+        ideas = paginator.page(1)
+    except EmptyPage:
+        ideas = paginator.page(paginator.num_pages)
+
     return render(request, 'ideas/index.html', {'ideas': ideas})
 
 
