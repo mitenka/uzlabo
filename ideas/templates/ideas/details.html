@@ -23,6 +23,10 @@
     <hr />
     Created at: {{ idea.created_at }}
 
+    <hr />
+    <a target="_blank" rel="noopener noreferrer" href="https://maps.google.com/?q={{ idea.address|urlencode }}">Show on map</a>
+
+    <hr />
     {% for image in idea.images.all %}
         <img src="{{ image.thumbnail.url }}" />
     {% endfor %}
