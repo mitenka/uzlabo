@@ -4,6 +4,35 @@
 
 {% block content %}
 <div class="container-fluid">
-    <h1>{% blocktranslate %}Home page{% endblocktranslate %}</h1>
+    <h1>
+        {% blocktranslate %}Improve your city!{% endblocktranslate %}
+    </h1>
+    <p>
+        {% blocktranslate %}Do you have an idea how to improve the public space in Riga? Submit your suggestion, gather supporters and make it happen!{% endblocktranslate %}
+    </p>
+    <p>
+    <a href="{% url 'ideas-new' %}">
+        {% blocktranslate %}Pitch an idea{% endblocktranslate %}
+    </a>
+    </p>
+    <p>
+        {% blocktranslate %}If you have an interesting idea how to solve an existing problem in your city, do not keep to yourself - share it with the world!{% endblocktranslate %}
+    </p>
+    <p>
+    <a href="{% url 'ideas-index' %}">
+        {% blocktranslate %}See submitted ideas{% endblocktranslate %}
+    </a>
+    </p>
+    <p>
+        {% blocktranslate %}What’s next?{% endblocktranslate %}
+    </p>
+    <p>
+        {% blocktranslate %}Learn what other’s think of your idea and get suggestions on next steps!{% endblocktranslate %}
+    </p>
+    <p>
+    <a href="#">
+        {% blocktranslate %}More{% endblocktranslate %}
+    </a>
+    </p>
 </div>
 {% endblock %}

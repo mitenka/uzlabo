@@ -3,21 +3,21 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
+"Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-06 18:25+0200\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"POT-Creation-Date: 2021-01-09 03:16+0200\n"
+"PO-Revision-Date: 2021-01-09 03:17+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: lv\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n != 0 ? 1 : "
 "2);\n"
+"X-Generator: Poedit 2.4.2\n"
 
 #: env/lib/python3.9/site-packages/django/contrib/messages/apps.py:7
 msgid "Messages"
@@ -120,6 +120,7 @@ msgid_plural ""
 "%(show_value)d)."
 msgstr[0] ""
 msgstr[1] ""
+msgstr[2] ""
 
 #: env/lib/python3.9/site-packages/django/core/validators.py:368
 #, python-format
@@ -131,6 +132,7 @@ msgid_plural ""
 "%(show_value)d)."
 msgstr[0] ""
 msgstr[1] ""
+msgstr[2] ""
 
 #: env/lib/python3.9/site-packages/django/core/validators.py:387
 #: env/lib/python3.9/site-packages/django/forms/fields.py:292
@@ -144,6 +146,7 @@ msgid "Ensure that there are no more than %(max)s digit in total."
 msgid_plural "Ensure that there are no more than %(max)s digits in total."
 msgstr[0] ""
 msgstr[1] ""
+msgstr[2] ""
 
 #: env/lib/python3.9/site-packages/django/core/validators.py:394
 #, python-format
@@ -151,6 +154,7 @@ msgid "Ensure that there are no more than %(max)s decimal place."
 msgid_plural "Ensure that there are no more than %(max)s decimal places."
 msgstr[0] ""
 msgstr[1] ""
+msgstr[2] ""
 
 #: env/lib/python3.9/site-packages/django/core/validators.py:399
 #, python-format
@@ -160,6 +164,7 @@ msgid_plural ""
 "Ensure that there are no more than %(max)s digits before the decimal point."
 msgstr[0] ""
 msgstr[1] ""
+msgstr[2] ""
 
 #: env/lib/python3.9/site-packages/django/core/validators.py:461
 #, python-format
@@ -500,6 +505,7 @@ msgid_plural ""
 "Ensure this filename has at most %(max)d characters (it has %(length)d)."
 msgstr[0] ""
 msgstr[1] ""
+msgstr[2] ""
 
 #: env/lib/python3.9/site-packages/django/forms/fields.py:552
 msgid "Please either submit a file or check the clear checkbox, not both."
@@ -556,6 +562,7 @@ msgid "Please submit %d or fewer forms."
 msgid_plural "Please submit %d or fewer forms."
 msgstr[0] ""
 msgstr[1] ""
+msgstr[2] ""
 
 #: env/lib/python3.9/site-packages/django/forms/formsets.py:352
 #, python-format
@@ -563,6 +570,7 @@ msgid "Please submit %d or more forms."
 msgid_plural "Please submit %d or more forms."
 msgstr[0] ""
 msgstr[1] ""
+msgstr[2] ""
 
 #: env/lib/python3.9/site-packages/django/forms/formsets.py:379
 #: env/lib/python3.9/site-packages/django/forms/formsets.py:386
@@ -650,6 +658,7 @@ msgid "%(size)d byte"
 msgid_plural "%(size)d bytes"
 msgstr[0] ""
 msgstr[1] ""
+msgstr[2] ""
 
 #: env/lib/python3.9/site-packages/django/template/defaultfilters.py:838
 #, python-format
@@ -998,6 +1007,7 @@ msgid "%d year"
 msgid_plural "%d years"
 msgstr[0] ""
 msgstr[1] ""
+msgstr[2] ""
 
 #: env/lib/python3.9/site-packages/django/utils/timesince.py:10
 #, python-format
@@ -1005,6 +1015,7 @@ msgid "%d month"
 msgid_plural "%d months"
 msgstr[0] ""
 msgstr[1] ""
+msgstr[2] ""
 
 #: env/lib/python3.9/site-packages/django/utils/timesince.py:11
 #, python-format
@@ -1012,6 +1023,7 @@ msgid "%d week"
 msgid_plural "%d weeks"
 msgstr[0] ""
 msgstr[1] ""
+msgstr[2] ""
 
 #: env/lib/python3.9/site-packages/django/utils/timesince.py:12
 #, python-format
@@ -1019,6 +1031,7 @@ msgid "%d day"
 msgid_plural "%d days"
 msgstr[0] ""
 msgstr[1] ""
+msgstr[2] ""
 
 #: env/lib/python3.9/site-packages/django/utils/timesince.py:13
 #, python-format
@@ -1026,6 +1039,7 @@ msgid "%d hour"
 msgid_plural "%d hours"
 msgstr[0] ""
 msgstr[1] ""
+msgstr[2] ""
 
 #: env/lib/python3.9/site-packages/django/utils/timesince.py:14
 #, python-format
@@ -1033,6 +1047,7 @@ msgid "%d minute"
 msgid_plural "%d minutes"
 msgstr[0] ""
 msgstr[1] ""
+msgstr[2] ""
 
 #: env/lib/python3.9/site-packages/django/views/csrf.py:110
 msgid "Forbidden"
@@ -1208,9 +1223,46 @@ msgstr ""
 msgid "Thumbnail"
 msgstr ""
 
-#: pages/templates/pages/home.html:7
-msgid "Home page"
+#: pages/templates/pages/home.html:8
+msgid "Improve your city!"
+msgstr "Uzlabo pilsētu!"
+
+#: pages/templates/pages/home.html:11
+msgid ""
+"Do you have an idea how to improve the public space in Riga? Submit your "
+"suggestion, gather supporters and make it happen!"
 msgstr ""
+"Vai Tev ir ideja, kā uzlabot vidi kādā no Rīgas apkaimēm? Iesniedz savu "
+"priekšlikumu, savāc atbalstītājus un palīdzi to realizēt!"
+
+#: pages/templates/pages/home.html:15
+msgid "Pitch an idea"
+msgstr "Iesniedz ideju"
+
+#: pages/templates/pages/home.html:19
+msgid ""
+"If you have an interesting idea how to solve an existing problem in your "
+"city, do not keep to yourself - share it with the world!"
+msgstr ""
+"Ja esi izdomājis interesantu risinājumu kādai problēmai Tavā pilsēta, neturi "
+"to pie sevis – dalies ar citiem!"
+
+#: pages/templates/pages/home.html:23
+msgid "See submitted ideas"
+msgstr "Skatīt idejas"
+
+#: pages/templates/pages/home.html:27
+msgid "What’s next?"
+msgstr "Kas notiks tālāk?"
+
+#: pages/templates/pages/home.html:30
+msgid ""
+"Learn what other’s think of your idea and get suggestions on next steps!"
+msgstr "Uzzini citu viedokļus un ieteikumus, kā virzīt savu ideju tālāk!"
+
+#: pages/templates/pages/home.html:34
+msgid "More"
+msgstr "Vairāk"
 
 #: templates/_base.html:28
 msgid "Sign Out"
