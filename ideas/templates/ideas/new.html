@@ -3,6 +3,8 @@
 {% block content %}
 <div class="container-fluid">
 
+  {% if user.is_authenticated %}
+
   <form action="." method="post" enctype="multipart/form-data">
     {% csrf_token %}
     {{ form.category.label }} {{ form.category }}<br />
@@ -13,6 +15,12 @@
     {{ form.images.label }} {{ form.images }}<br />
     <input type="submit" value="Submit">
   </form>
+
+  {% else %}
+
+  <p>Please, sign in with Google or Facebook to submit an idea.</p>
+
+  {% endif %}
 
 </div>
 {% endblock %}

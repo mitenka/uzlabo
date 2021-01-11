@@ -39,11 +39,19 @@
         <div>{{ comment.user.first_name }} {{ comment.user.last_name }} ({{ comment.created_at }}): {{ comment.body }}</div>
     {% endfor %}
 
+    {% if user.is_authenticated %}
+
     <form action="." method="post">
         {% csrf_token %}
         {{ form.body }}
         <input type="submit" value="Submit">
     </form>
+
+    {% else %}
+
+    <p>Please, sign in with Google or Facebook to leave a comment.</p>
+
+    {% endif %}
 
 </div>
 {% endblock %}
