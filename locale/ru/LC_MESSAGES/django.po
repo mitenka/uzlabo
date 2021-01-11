@@ -7,8 +7,10 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-09 03:20+0200\n"
-"PO-Revision-Date: 2021-01-09 03:25+0200\n"
+"POT-Creation-Date: 2021-01-11 16:03+0200\n"
+"PO-Revision-Date: 2021-01-11 16:12+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -16,8 +18,6 @@ msgstr ""
 "Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n"
 "%100>=11 && n%100<=14)? 2 : 3);\n"
-"Last-Translator: \n"
-"Language-Team: \n"
 "X-Generator: Poedit 2.4.2\n"
 
 #: env/lib/python3.9/site-packages/django/contrib/messages/apps.py:7
@@ -1239,6 +1239,143 @@ msgstr ""
 msgid "Thumbnail"
 msgstr ""
 
+#: pages/templates/pages/about.html:8
+msgid "What is Uzlabo?"
+msgstr "Что такое Uzlabo?"
+
+#: pages/templates/pages/about.html:11
+msgid ""
+"In our daily lives we often notice various problems in the public space. "
+"Instead of only observing, Uzlabo.lv invites the people of Riga to take the "
+"next step and get involved in creating solutions! If you have an idea how to "
+"solve an existing problem in your neighbourhood, do not keep to yourself – "
+"share it with the world!"
+msgstr ""
+"В нашей повседневной жизни мы часто замечаем какие-то несовершенства "
+"городской среды. Uzlabo.lv приглашает рижан сделать шаг вперед и стать "
+"причастными к решению этих проблем. Если у вас есть идея как решить ту или "
+"иную задачу, не держите её в себе — отройтесь миру!"
+
+#: pages/templates/pages/about.html:14
+msgid ""
+"With the help of uzlabo.lv you can gather supporters for your suggested "
+"solution, or you can simply submit it to the idea bank, so that it could be "
+"freely used by any new entrepreneur, developer, active citizen or "
+"municipality representative."
+msgstr ""
+"С помощью uzlabo.lv вы можете найти единомышленников для предложенного "
+"решения, или вы просто можете поделиться идеей, которая может быть свободно "
+"использована предпринимателем, застройщиком, активным гражданином или "
+"представителем муниципалитета."
+
+#: pages/templates/pages/about.html:18
+msgid "Share your idea!"
+msgstr "Поделитесь идей!"
+
+#: pages/templates/pages/about.html:21
+msgid ""
+"Describe your solution, the desired location, add a photo or any other "
+"visual material and allow others to check it out!"
+msgstr ""
+"Опишите свою идею, укажите местоположение, добавьте фотографии или иные "
+"визуальные материалы, и поделитесь своим решением со всеми нами!"
+
+#: pages/templates/pages/about.html:25
+msgid "Find supporters!"
+msgstr "Найдите единомышленников!"
+
+#: pages/templates/pages/about.html:28
+msgid ""
+"Use the platform the find like-minded people with whom you can develop the "
+"idea further to make our city safer, greener and overall more people-"
+"friendly!"
+msgstr ""
+"Используйте платформу, чтобы найти единомышленников, с которыми вы можете "
+"развивать идею дальше. Вместе мы сделаем наш город более безопасным, зеленым "
+"и в целом более дружелюбным к людям!"
+
+#: pages/templates/pages/about.html:32
+msgid "Active neighbourhoods"
+msgstr "Активные общественные организации"
+
+#: pages/templates/pages/about.html:35
+msgid ""
+"You can submit your idea about any location in Riga to find potential "
+"supporters. Additionally, there are several neighbourhood community "
+"organizations that collaborate with uzlabo.lv. They are ready to help and "
+"advise you how to move forward with your idea."
+msgstr ""
+"Вы можете подать свою идею касательно любого места в Риге, чтобы найти "
+"потенциальных сторонников. Кроме того, существует несколько местных "
+"общественных организаций, которые сотрудничают с uzlabo.lv. Они готовы "
+"помочь и посоветовать вам, как продвинуться вперед в реализации ваших идей."
+
+#: pages/templates/pages/about.html:38
+msgid ""
+"If you are a representative of a neighbourhood community organization and "
+"are interested to get involved, get in touch with us!"
+msgstr ""
+"Если вы являетесь представителем общественной организации и заинтересованы в "
+"участии, свяжитесь с нами!"
+
+#: pages/templates/pages/about.html:42
+msgid "What happen’s next?"
+msgstr "Что теперь?"
+
+#: pages/templates/pages/about.html:45
+msgid ""
+"When you submit your idea to uzlabo.lv, it will become available for public "
+"discussion. If you see that other people also think that your solution could "
+"be helpful, we invite you to start to move the idea further. You can try the "
+"following:"
+msgstr ""
+"Когда вы поделитесь своей идеей на uzlabo.lv, она станет доступна для "
+"публичного обсуждения. Если вы видите, что другие люди также думают, что "
+"ваше решение может быть полезным, мы приглашаем вас начать продвигать эту "
+"идею дальше. Вы можете попробовать следующее:"
+
+#: pages/templates/pages/about.html:48
+msgid "Start communication with the responsible department now!"
+msgstr "Начните общение с ответственным отделением прямо сейчас!"
+
+#: pages/templates/pages/about.html:49
+msgid ""
+"We invite you to send your idea to the city department in charge of the "
+"particular field. To better understand how to do this, you can seek advice "
+"from your local neighbourhood community organization!"
+msgstr ""
+"Мы приглашаем вас отправить свою идею в городской департамент, отвечающий за "
+"конкретный вид деятельности. Чтобы лучше понять, как это сделать, вы можете "
+"обратиться за советом к вашей местной общественной организации!"
+
+#: pages/templates/pages/about.html:51
+msgid "Submit your idea to the local project contests!"
+msgstr "Отправьте свою идею на местный конкурс проектов!"
+
+#: pages/templates/pages/about.html:52
+msgid ""
+"Follow the information about municipality project contests – participatory "
+"budgeting, neighbourhood initiatives for citizen engagement and others where "
+"you can obtain some funding to realize your idea!"
+msgstr ""
+"Следите за информацией о конкурсах муниципальных проектов: частичное "
+"бюджетирование, инициативы муниципалитетов для вовлечения граждан и другие, "
+"где вы можете получить некоторое финансирование для реализации своей идеи!"
+
+#: pages/templates/pages/about.html:54
+msgid "We are working to ensure active engagement of Riga city council!"
+msgstr "Мы работаем над тем, чтобы обеспечить активное участие Рижской Думы!"
+
+#: pages/templates/pages/about.html:55
+msgid ""
+"In the near future we hope to ensure engagement of Riga City Council "
+"department representatives that could use uzlabo.lv to learn about the needs "
+"and suggestions of the people of Riga."
+msgstr ""
+"В ближайшее время мы надеемся обеспечить привлечение представителей "
+"департамента Рижской Думы, которые могли бы использовать uzlabo.lv, чтобы "
+"узнать о потребностях и предложениях жителей Риги."
+
 #: pages/templates/pages/home.html:8
 msgid "Improve your city!"
 msgstr "Улучшите свой город!"
@@ -1281,7 +1418,7 @@ msgstr "Узнайте, что другие думают о вашей идее!
 msgid "More"
 msgstr "Далее"
 
-#: templates/_base.html:28
+#: templates/_base.html:29
 msgid "Sign Out"
 msgstr ""
 
