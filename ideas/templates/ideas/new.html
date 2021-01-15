@@ -24,3 +24,27 @@
 
 </div>
 {% endblock %}
+
+{% block extra_js %}
+<script src="https://maps.googleapis.com/maps/api/js?libraries=places&language=lv&key=AIzaSyBCktoE7GzzO3Ej6hAoIO4nJdVvRPI7DXI"></script>
+<script>
+  const options = {
+    types: ["address"],
+    fields: ["name", "formatted_address"],
+    componentRestrictions: {country: "lv"}
+  };
+  const autocomplete = new window.google.maps.places.Autocomplete(document.getElementById("id_address"), options);
+
+  autocomplete.addListener("place_changed", () => {
+    const place = autocomplete.getPlace();
+    let address = place.name;
+
+    if (place.formatted_address) {
+      address = place.formatted_address;
+    }
+
+    const nextElementToFocus = document.getElementById("id_images");
+    nextElementToFocus.focus();
+  });
+</script>
+{% endblock %}
